@@ -1,0 +1,13 @@
+1. Pipe output to file: nc 2018shell.picoctf.com 33158 > 1.txt
+2. Read output from file in powershell: Get-Content 1.txt
+3. Pipe echo to Netcat and output to file: echo 'Help Me!' | nc 2018shell.picoctf.com 33158 > 2.txt
+4. Read output from file in powershell: Get-Content 2.txt
+5. We see that we can input commands
+
+6. We test running ls: echo 'ls' | nc 2018shell.picoctf.com 33158 > 3.txt
+7. Read output from file in powershell: Get-Content 3.txt
+8. Did not work.
+
+9. Testing: echo "Help Me!" | nc 2018shell.picoctf.com 33158 > 4.txt
+10. Read output from file in powershell: Get-Content 4.txt
+8. Did not work.
